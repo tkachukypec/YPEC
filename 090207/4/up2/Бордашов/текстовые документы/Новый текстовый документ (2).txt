@@ -1,0 +1,36 @@
+-git config --global user.email EMAIL
+git config --global user.login LOGIN
+папка с проектом 
+git init
+git add .
+git commit -m "Init"
+git remote add origin ССЫЛКА
+git push origin master
+
+
+
+
+обновление
+git add .
+git commit -m "Update"
+git push origin master
+<Style x:Key="tabItemStyle" TargetType="TabItem">
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Border Margin="4,0,4,25" Name="_border" CornerRadius="3" Background="Transparent" BorderBrush="Black" BorderThickness="1">
+                        <ContentPresenter ContentSource="Header">
+                            
+                        </ContentPresenter>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="_border" Property="Background" Value="Black" ></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>        

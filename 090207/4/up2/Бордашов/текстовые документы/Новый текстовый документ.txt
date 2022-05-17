@@ -1,0 +1,28 @@
+ <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Column="0" Background="#10101A">
+            <StackPanel DockPanel.Dock="Top" Margin="0,15" Height="35" Orientation="Horizontal" VerticalAlignment="Top">
+                <Image Margin="15,0,0,0" Width="25" Height="25" Source="Resours/icon/free-icon-library-3352505.png"></Image>
+                <TextBlock FontSize="15" Margin="15,0,0,0" Foreground="White" VerticalAlignment="Center" Text="Библиотека" FontWeight="Bold"></TextBlock>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Background="#1C1A2F" Height="62" Orientation="Horizontal" Margin="10,359,0,0" >
+                <Border Margin="7" Width="46" CornerRadius="15">
+                    <Border.Background>
+                        <ImageBrush/>
+                    </Border.Background>
+                </Border>
+                <StackPanel Margin="5,0,0,0" Width="95" Orientation="Vertical">
+                    <TextBlock FontSize="12" Foreground="White" Margin="0,15,0,0" FontWeight="Bold" />
+                    <TextBlock Foreground="White" FontSize="12" Margin="0,2,0,0" FontWeight="Bold"/>
+
+                </StackPanel>
+                <Button x:Name="exit" Click="Exit_Click" Width="40">
+                    <Image Source="Resours/image/free-icon-exit-320140.png" Height="60" RenderTransformOrigin="0.5,0.667"/>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+
+
+ books = new ObservableCollection<books>(DataBase.GetEntities().books);
